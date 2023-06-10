@@ -1,2 +1,3 @@
-# MC-NewTab-for-Firefox
-a custom UserContent.css file for Mozilla Firefox
+<p align="center">
+  <img src="https://github.com/Spelis123/MC-NewTab-for-Firefox/blob/main/image.png" />
+</p>
