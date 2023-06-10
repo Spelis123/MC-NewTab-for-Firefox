@@ -1,0 +1,65 @@
+* {
+  scrollbar-width: none !important;
+}
+
+@-moz-document url("about:newtab") {
+  body,html,#root {
+    overflow: hidden;
+  }
+  .logo {
+    background: url("firefox.png") !important;
+    background-size: cover !important;
+    width: 164px !important;
+    height: 164px !important;
+  }
+  .search-inner-wrapper,
+  .icon-settings{
+    display:none !important;
+  }
+  .wordmark {
+    height: 164px !important;
+    width:268px !important;
+    background-size: 268px !important;
+  } 
+  .logo-and-wordmark::after {
+    content: "(hover me)";
+    position:absolute;
+    margin-top:100px;
+    margin-left: 50%;
+    transform: translateX(-50%)
+  }
+  .non-collapsible-section,
+  .body-wrapper {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+  }
+  .non-collapsible-section,
+  .body-wrapper {
+    transition: all .3s ease !important;
+  }
+  .outer-wrapper > main:nth-child(1):hover .non-collapsible-section {
+    opacity:0;
+    top:40%;
+  }
+  .outer-wrapper > main:nth-child(1):not(:hover) .body-wrapper {
+    opacity:0;
+    top:60%;
+  }
+  
+  .collapsible-section {
+    padding:0 !important;
+    width:fit-content !important;
+  }
+  @media (min-width: 866px) {
+      .top-sites-list .hide-for-narrow { display: inline-block !important;}
+  }
+  #root {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F6424916.png&f=1&nofb=1&ipt=9aee3c13305d68ce3cacd8a72be5f7bf348991bc1b5cf256a525539a95fce84b&ipo=images") !important;
+    background-size: cover !important;
+  }
+  .body-wrapper {
+    width: 468px
+  }
+}
